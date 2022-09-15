@@ -4,11 +4,23 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
 
     //ENTRADA
-
-
+    const nr1 = parseInt(prompt("Insira um número:"));
+    const nr2 = parseInt(prompt("Insira o segundo  número:"));
+    const nr3 = parseInt(prompt("Insira o terceiro número:"));
     //PROCESSAMENTO
 
+    let resultado = {} ;
 
+    if (nr1>=nr2&&nr2>=nr3) {
+        
+        resultado.push(nr1)
+     resultado.push(nr2) 
+    }else  if (nr1>=nr2) {
+        
+        resultado.push(nr1)
+     resultado.push(nr2) 
+    }
+    
     //SAÍDA
 
 </script>
