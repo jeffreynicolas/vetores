@@ -9,18 +9,25 @@
     const nr3 = parseInt(prompt("Insira o terceiro número:"));
     //PROCESSAMENTO
 
-    let resultado = {} ;
+    let resultado = [];
 
-    if (nr1>=nr2&&nr2>=nr3) {
-        
-        resultado.push(nr1)
-     resultado.push(nr2) 
-    }else  if (nr1>=nr2) {
-        
-        resultado.push(nr1)
-     resultado.push(nr2) 
+    if (nr1>=nr2 && nr2>=nr3) {        
+        resultado.push(nr1, nr2, nr3);
+    }
+    else if (nr1>=nr3 && nr3 >= nr2) {
+        resultado.push(nr1,nr3,nr2);
+    }
+    else if (nr2>=nr1 && nr1>=nr3) {        
+        resultado.push(nr2, nr1, nr3);
+    } else if (nr2>=nr3 && nr3>=nr1) {        
+        resultado.push(nr2, nr3, nr1);
+    } else if (nr3>=nr1 && nr1>=nr1) {        
+        resultado.push(nr3, nr1, nr2);
+    }else if (nr3>=nr2 && nr2>=nr1) {        
+        resultado.push(nr3, nr2, nr1);
     }
     
-    //SAÍDA
 
+    //SAÍDA
+document.write(`${resultado}`);
 </script>
